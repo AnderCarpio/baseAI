@@ -1,0 +1,968 @@
+{
+  "id": "d5a18b0a-dc89-4368-97e3-7f6e7acc7704",
+  "revision": 0,
+  "last_node_id": 69,
+  "last_link_id": 83,
+  "nodes": [
+    {
+      "id": 57,
+      "type": "Reroute",
+      "pos": [
+        -8918.863855493228,
+        2237.903571715682
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "widget": {
+            "name": "value"
+          },
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            62
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 59,
+      "type": "Reroute",
+      "pos": [
+        -8894.21749780779,
+        2203.6725193747625
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 64
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            65
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 60,
+      "type": "Reroute",
+      "pos": [
+        -8253.549122195293,
+        2202.3032772811275
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 65
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            66,
+            67
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 4,
+      "type": "AILab_QwenVL_PromptEnhancer",
+      "pos": [
+        -8539.5518747079,
+        1707.7030819054862
+      ],
+      "size": [
+        340,
+        454
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt_text",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt_text"
+          },
+          "link": 4
+        },
+        {
+          "name": "custom_system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "custom_system_prompt"
+          },
+          "link": 63
+        }
+      ],
+      "outputs": [
+        {
+          "name": "ENHANCED_OUTPUT",
+          "type": "STRING",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "1038lab/ComfyUI-QwenVL",
+        "ver": "fcd1ada87a28f922cb887f779db32429f78a022c",
+        "Node name for S&R": "AILab_QwenVL_PromptEnhancer"
+      },
+      "widgets_values": [
+        "Qwen3-VL-4B-Instruct",
+        "None (FP16)",
+        "auto",
+        false,
+        "auto",
+        "",
+        "📝 Enhance",
+        "Make the following changes to the prompt:\n* The woman's hair should be reddish\n* A woman of short stature\n* A heavyset woman\n* Remove any descriptions related to tattoos\n* Fair skin, detailed skin\nThe output should be only the modified prompt",
+        1024,
+        0.7,
+        0.9,
+        1.1,
+        true,
+        862145843,
+        "randomize"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Text Multiline",
+      "pos": [
+        -9447.242075684193,
+        1580.7900490190048
+      ],
+      "size": [
+        404.3205972568139,
+        136.3157851375331
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            64
+          ]
+        }
+      ],
+      "title": "Add Trigger Start - End",
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "afeee09ba44e713ec52a413ac6b105fd06b2d356",
+        "Node name for S&R": "Text Multiline",
+        "aux_id": "ltdrdata/was-node-suite-comfyui"
+      },
+      "widgets_values": [
+        "NathCampos. A woman has big breasts, sagging breasts, hanging breasts, and big areolas"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "PreviewImage",
+      "pos": [
+        -9436.721653105034,
+        1764.1322293565913
+      ],
+      "size": [
+        424.03286405187464,
+        463.9311489564766
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 12
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.18.1",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 55,
+      "type": "Reroute",
+      "pos": [
+        -9040.116466712478,
+        2277.113686215282
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            60
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 56,
+      "type": "Text Multiline",
+      "pos": [
+        -9445.004849646735,
+        1338.1580757183083
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            61
+          ]
+        }
+      ],
+      "title": "Prompt - Perfeccionar prompt",
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "afeee09ba44e713ec52a413ac6b105fd06b2d356",
+        "Node name for S&R": "Text Multiline",
+        "aux_id": "ltdrdata/was-node-suite-comfyui"
+      },
+      "widgets_values": [
+        "Make the following changes to the prompt:\n* The woman's hair should be reddish\n* A woman of short stature\n* A heavyset woman\n* Remove any descriptions related to tattoos\n* Fair skin, detailed skin\nThe output should be only the modified prompt"
+      ]
+    },
+    {
+      "id": 65,
+      "type": "Reroute",
+      "pos": [
+        -9436.36168514305,
+        2279.410901018734
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 78
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "IMAGE",
+          "links": [
+            77
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 58,
+      "type": "Reroute",
+      "pos": [
+        -8675.649116697226,
+        2238.500236189243
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "widget": {
+            "name": "value"
+          },
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            63
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      }
+    },
+    {
+      "id": 64,
+      "type": "LoadImage",
+      "pos": [
+        -9774.136982257512,
+        1712.2195743108045
+      ],
+      "size": [
+        282.798828125,
+        314.0000000000002
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "20251227_ig_AQNrfA_09tHm1zcgSb5rbCLCQpufq94VHzoz5hzMuqL0HgXJFOrJKKsZZ_WBTWvuGPZ_UNLLOdM1rGo3_rruIW4lKRiQRuts4Xg20J4.00_00_07_29.Imagen fija015.png",
+        "image"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "PrimitiveInt",
+      "pos": [
+        -9761.499476758696,
+        1581.3243379897651
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            58
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.4.0",
+        "Node name for S&R": "PrimitiveInt"
+      },
+      "widgets_values": [
+        0,
+        "increment"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "LoadImageListFromDir //Inspire",
+      "pos": [
+        -9823.907576116018,
+        1344.9789280722462
+      ],
+      "size": [
+        342.63779910273877,
+        198.10772628090967
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "start_index",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "start_index"
+          },
+          "link": 58
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            12,
+            78
+          ]
+        },
+        {
+          "name": "MASK",
+          "shape": 6,
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "FILE PATH",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-inspire-pack",
+        "ver": "1.23.0",
+        "Node name for S&R": "LoadImageListFromDir //Inspire",
+        "aux_id": "ltdrdata/ComfyUI-Inspire-Pack"
+      },
+      "widgets_values": [
+        "/workspace/ComfyUI/input/reference",
+        1,
+        0,
+        false,
+        "Alphabetical (ASC)"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "Save Text File",
+      "pos": [
+        -8917.107618974766,
+        1357.125141146175
+      ],
+      "size": [
+        334.81545170851496,
+        256.76968374546095
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 83
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "afeee09ba44e713ec52a413ac6b105fd06b2d356",
+        "Node name for S&R": "Save Text File",
+        "aux_id": "ltdrdata/was-node-suite-comfyui"
+      },
+      "widgets_values": [
+        "/workspace/ComfyUI/output/prompts",
+        "NathCamposV01",
+        "_",
+        5,
+        ".txt",
+        "utf-8",
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "AILab_QwenVL_Advanced",
+      "pos": [
+        -8918.130339522864,
+        1708.9478474451557
+      ],
+      "size": [
+        340,
+        468
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 60
+        },
+        {
+          "name": "video",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "RESPONSE",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "1038lab/ComfyUI-QwenVL",
+        "ver": "fcd1ada87a28f922cb887f779db32429f78a022c",
+        "Node name for S&R": "AILab_QwenVL_Advanced"
+      },
+      "widgets_values": [
+        "Qwen3-VL-4B-Instruct",
+        "None (FP16)",
+        "auto",
+        false,
+        "auto",
+        "🖼️ Ultra Detailed Description",
+        "",
+        1024,
+        0.6,
+        0.9,
+        1,
+        1.2,
+        16,
+        true,
+        94583386,
+        "randomize"
+      ]
+    },
+    {
+      "id": 67,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        -7869.804556397087,
+        1727.2361514912332
+      ],
+      "size": [
+        46.54424091908277,
+        30
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "label": " ",
+          "name": "",
+          "type": "*",
+          "link": 79
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 1,
+          "label": " ",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            82
+          ]
+        }
+      ],
+      "properties": {
+        "resizable": true,
+        "size": [
+          46.54424091908277,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Top"
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "type": "Reroute (rgthree)",
+      "pos": [
+        -7867.3797636633,
+        1595.4581982125728
+      ],
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 2,
+          "label": " ",
+          "name": "",
+          "type": "*",
+          "link": 82
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 3,
+          "label": " ",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            83
+          ]
+        }
+      ],
+      "properties": {
+        "resizable": true,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Bottom",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "type": "Text Concatenate",
+      "pos": [
+        -8168.434907074611,
+        1728.825357949247
+      ],
+      "size": [
+        270,
+        142
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text_a",
+          "shape": 7,
+          "type": "STRING",
+          "link": 66
+        },
+        {
+          "name": "text_b",
+          "shape": 7,
+          "type": "STRING",
+          "link": 13
+        },
+        {
+          "name": "text_c",
+          "shape": 7,
+          "type": "STRING",
+          "link": 67
+        },
+        {
+          "name": "text_d",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            79
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "was-ns",
+        "ver": "afeee09ba44e713ec52a413ac6b105fd06b2d356",
+        "Node name for S&R": "Text Concatenate",
+        "aux_id": "ltdrdata/was-node-suite-comfyui"
+      },
+      "widgets_values": [
+        ". ",
+        "false"
+      ]
+    }
+  ],
+  "links": [
+    [
+      4,
+      2,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      12,
+      10,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      13,
+      4,
+      0,
+      8,
+      1,
+      "STRING"
+    ],
+    [
+      58,
+      12,
+      0,
+      10,
+      0,
+      "INT"
+    ],
+    [
+      60,
+      55,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      61,
+      56,
+      0,
+      57,
+      0,
+      "STRING"
+    ],
+    [
+      62,
+      57,
+      0,
+      58,
+      0,
+      "STRING"
+    ],
+    [
+      63,
+      58,
+      0,
+      4,
+      1,
+      "STRING"
+    ],
+    [
+      64,
+      7,
+      0,
+      59,
+      0,
+      "STRING"
+    ],
+    [
+      65,
+      59,
+      0,
+      60,
+      0,
+      "STRING"
+    ],
+    [
+      66,
+      60,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      67,
+      60,
+      0,
+      8,
+      2,
+      "STRING"
+    ],
+    [
+      77,
+      65,
+      0,
+      55,
+      0,
+      "IMAGE"
+    ],
+    [
+      78,
+      10,
+      0,
+      65,
+      0,
+      "IMAGE"
+    ],
+    [
+      79,
+      8,
+      0,
+      67,
+      0,
+      "STRING"
+    ],
+    [
+      82,
+      67,
+      0,
+      69,
+      0,
+      "STRING"
+    ],
+    [
+      83,
+      69,
+      0,
+      13,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "SAMPLER",
+      "bounding": [
+        -8928.130339522864,
+        1635.3478474451558,
+        1037.3221943356666,
+        554.0895310793389
+      ],
+      "color": "#A88",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "INPUT - MEDIA",
+      "bounding": [
+        -9833.907576116018,
+        1264.5580757183084,
+        831.2187870628586,
+        973.5053025947597
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "OUTPUT",
+      "bounding": [
+        -8927.107618974766,
+        1283.5251411461752,
+        354.81545170851496,
+        340.369683745461
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7303310383513975,
+      "offset": [
+        10252.151047254016,
+        -1120.5465799566623
+      ]
+    },
+    "frontendVersion": "1.34.8",
+    "workflowRendererVersion": "LG",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
