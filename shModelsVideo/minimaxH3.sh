@@ -15,6 +15,11 @@ wget -c https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_
 # Lora - turbo
 wget -c https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora/resolve/main/minimax_h3_turbo_4step_ckpt500.safetensors -P ComfyUI/models/loras
 
+# Lora
+wget -c https://huggingface.co/model-hub-nd/test3/resolve/main/MysticXXX-v4.safetensors -P ComfyUI/models/loras
+
+
+
 # TAE
 wget -c https://huggingface.co/Kijai/MiniMax-H3-TAE/resolve/main/vae_approx/taeh3.safetensors -P ComfyUI/models/loras
 
