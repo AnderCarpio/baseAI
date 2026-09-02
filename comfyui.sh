@@ -76,5 +76,5 @@ git clone https://github.com/comrender/ComfyUI-Load-txt-From-Folder.git ComfyUI/
 
 # Run ComfyUI
 echo "Ejecutar COmfyUI con el comando: python main.py --listen 0.0.0.0 --port 8188"
-cd ComfyUI
-python main.py --listen 0.0.0.0 --port 8188
+#cd ComfyUI
+#python main.py --listen 0.0.0.0 --port 8188

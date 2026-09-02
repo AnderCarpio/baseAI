@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+
+# Docker build files
+docker-compose.yml
+.dockerignore
+
+# Workflows (not needed inside the container)
+workflows/
+
+# Other shell scripts (only comfyui.sh is needed for build)
+*.sh
+!comfyui.sh
+
+# Python cache
+__pycache__
+*.pyc
+.venv/
+venv/

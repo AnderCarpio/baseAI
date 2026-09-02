@@ -1,0 +1,16 @@
+# ComfyUI data directory
+ComfyUI_data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
