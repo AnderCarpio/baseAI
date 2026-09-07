@@ -19,4 +19,5 @@ wget -c https://huggingface.co/model-hub-nd/test3/resolve/main/MysticXXX-v4.safe
 wget -c https://huggingface.co/Kijai/MiniMax-H3-TAE/resolve/main/vae_approx/taeh3.safetensors -P ComfyUI/models/loras
 
 # Text Endocer
-wget -c https://huggingface.co/buckets/AnderCarpio07/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot-bucket/resolve/qwen3vl_32b_h3_ultra_uncensored_heretic_int8_convrot.safetensors -P ComfyUI/models/text_encoders
+#wget -P ComfyUI/models/text_encoders -c https://huggingface.co/buckets/AnderCarpio07/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot-bucket/resolve/qwen3vl_32b_h3_ultra_uncensored_heretic_int8_convrot.safetensors
+wget -P ComfyUI/models/text_encoders https://huggingface.co/nif0/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic-H3-GGUF/resolve/main/Qwen3-VL-32B-Ultra-Heretic-H3-L0-49-IQ3_XXS.gguf
