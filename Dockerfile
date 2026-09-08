@@ -109,6 +109,9 @@ RUN git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git ComfyU
 # Load Files TXT Batch
 RUN git clone https://github.com/comrender/ComfyUI-Load-txt-From-Folder.git ComfyUI-Load-txt-From-Folder
 
+# LanPaint
+RUN git clone https://github.com/scraed/LanPaint.git LanPaint
+
 WORKDIR /opt/comfyui
 
 EXPOSE 8188

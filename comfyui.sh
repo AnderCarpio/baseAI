@@ -74,6 +74,9 @@ git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git ComfyUI/cu
 # Load Files TXT Batch
 git clone https://github.com/comrender/ComfyUI-Load-txt-From-Folder.git ComfyUI/custom_nodes/ComfyUI-Load-txt-From-Folder
 
+# LanPaint
+git clone https://github.com/scraed/LanPaint.git ComfyUI/custom_nodes/LanPaint
+
 # Run ComfyUI
 echo "Ejecutar COmfyUI con el comando: python main.py --listen 0.0.0.0 --port 8188"
 #cd ComfyUI
